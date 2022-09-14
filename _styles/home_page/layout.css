@@ -1,0 +1,74 @@
+.body-container {
+ background: var(--body-container);
+ display: flex;
+ flex-flow: row nowrap;
+}
+
+.sideBar {
+ width: 100%;
+ max-width: 328px;
+ background: var(--sideBar-Menu-bg-color);
+ border-right: 1px solid rgb(37, 37, 37);
+ transition: 0.3s all;
+ animation-name: opacityAnimation;
+ animation-duration: 0.5s;
+ display: block;
+ z-index: 100;
+ position: relative;
+}
+
+.sideBar-slide {
+ animation-name: sideBarSlideAnimation;
+ animation-duration: 0.3s;
+ animation-timing-function: cubic-bezier(0.42, 0, 0.33, 1.16);
+ animation-fill-mode: forwards;
+}
+
+.sideBar-slide-reverse {
+ animation-name: sideBarSlideAnimation2;
+ animation-duration: 0.3s;
+ animation-timing-function: cubic-bezier(0.35, 0.86, 1, 1);
+ animation-fill-mode: forwards;
+}
+
+.main-content-container {
+ background: var(--body-container);
+ width: var(--content-render-width); 
+ height: var(--content-render-height);
+}
+
+.shrink-sideBar {
+ width: 100%;
+ max-width: 35px;
+}
+
+.no-display {
+ display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+ .sideBar {
+  max-width: 100%;
+  display: none;
+  height: 100vh;
+  overflow: hidden;
+ }
+
+ .shrink-sideBar {
+  width: 35px;
+  display: none;
+ }
+
+ #blank-sidebar-content {
+  display: none;
+  background: #00000092;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  animation-name: opacityAnimation;
+  animation-duration: 0.3s;
+ }
+}

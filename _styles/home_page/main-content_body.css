@@ -1,0 +1,114 @@
+#doc-content-render-container {
+ position: relative;
+ width: 100%;
+ height: calc(var(--content-render-height) - var(--nav-header-height));
+ overflow-y: scroll;
+ scroll-behavior: smooth;
+ background: var(--body-container);
+}
+
+#doc-content-render {
+ margin: 15px auto;
+ margin-top: 0;
+ margin-bottom: 0px;
+ padding: 8px 12px;
+ animation: opacityAnimation 1s;
+ position: relative;
+}
+
+#content-render {
+ width: 99%;
+ max-width: 900px;
+ margin: 0 auto;
+ animation-name: opacityAnimation;
+ animation-duration: 300ms;
+}
+
+.middle-content-center {
+ width: 100%;
+ max-width: var(--main-content-max-width);
+
+ transition: 0.2s max-width;
+}
+
+.full-content-expand {
+ width: 95%;
+}
+
+/* ########################################################### */
+/* Loading Element  */
+/* ########################################################### */
+
+.spinner-content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ height: 20vh;
+}
+
+.spinner-wheel {
+ border: 4px solid #252526;
+ border-radius: 50%;
+ border-top: 4px solid #eaeaea;
+ width: 30px;
+ height: 30px;
+ animation: spin 0.5s linear infinite;
+ -webkit-animation: loadingSpin 0.8s ease-in-out infinite;
+ position: relative;
+}
+
+/* .spinner-message { */
+/* color: #718093;
+ font-family: Arial;
+ font-size: 0.4rem;
+ font-weight: 700;
+ position: absolute;
+ top:67px; */
+/* } */
+
+/* ########################################################### */
+/* Button Merge */
+/* ########################################################### */
+
+#btn-merge {
+ color: rgb(224, 224, 224);
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ font-weight: 600;
+ position: absolute;
+ top: -5px;
+ right: 0;
+ outline: none;
+ border: 1px solid #505050;
+ border-radius: 5px;
+ background: rgba(255, 255, 255, 0);
+ padding: 8px 12px;
+ transition: 200ms all;
+ transition-property: background-color, color;
+}
+
+#btn-merge:hover {
+ color: #272727;
+ background-color: #c8d6e5;
+ border-bottom: 3px solid gray;
+}
+
+#btn-merge:active {
+ transform: scale(0.95);
+}
+
+/* ########################################################### */
+/* ########################################################### */
+/* ########################################################### */
+
+@media screen and (max-width: 1366px) {
+ #doc-content-render-container {
+  height: calc(var(--content-render-height) - var(--nav-header-height));
+ }
+}
+
+@media screen and (max-width: 1000px) {
+ #doc-content-render-container {
+  height: calc(var(--content-render-height) - var(--nav-header-height));
+ }
+}

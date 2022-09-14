@@ -1,0 +1,90 @@
+html {
+ --text-color: #fff;
+ --sideBar-header-bg-color: #252526;
+ --sideBar-Menu-bg-color: #252526;
+ --sideBar-footer-bg-color: #292929;
+ --body-container: #1e1f22;
+
+ --sidebar-header-height: 41.996px;
+ --sidebar-footer-height: 45px;
+
+ --input-search-input-color: #9d9d9d;
+ --input-search-input-border-color: #474747;
+
+ --nav-header-height: 72.09px;
+ --content-render-height: 110.5vh;
+ --content-render-width: 108.8vw;
+
+ --sub-title-link-hover-bg-color: rgba(61, 61, 61, 0.22);
+
+ --main-content-max-width: 1100px; /* Doc header and body width */
+
+ --menu-arrow-close-color: #505050;
+ --menu-arrow-open-color: #ffff;
+ --menu-arrow-hover-color: rgb(174, 174, 174);
+
+ --hierarchy-line-color: #2f2f2f;
+ --sub-title-highlight-bg-color: #007acc3b;
+
+ --menuList-background-color: #00000038;
+ --menuList-background-active-color: #25252600;
+ --menuList-background-hover-color: #0404041d;
+
+ --title-link-menu-bg-active-color: #0c0c0c8f;
+
+ /* --js-code-block-primary-bg-color: rgb(8, 27, 75); */
+ --js-code-block-primary-bg-color: #212224;
+ --terminal-block-primary-bg-color: #1f1f26;
+ --styleSheet-block-primary-bg-color: #282c34;
+ --hyperText-block-primary-bg-color: #071833;
+ --python-code-block-primary-bg-color: #21242a;
+ /* --python-code-block-primary-bg-color: #0b1222; */
+
+ --pre-block-animation: opacityAnimation 0.3s linear 0.8s forwards;
+}
+
+@media screen and (max-width: 1920px) {
+ html {
+  --main-content-max-width: 1000px; /* Doc header and body width */
+  --content-render-height: 110.5vh;
+ }
+}
+
+@media screen and (max-width: 1366px) {
+ html {
+  --content-render-height: 111vh;
+  --nav-header-height: 87px;
+ }
+}
+
+@media screen and (max-width: 1000px) {
+ html {
+  --content-render-height: 100vh;
+  --nav-header-height: 73.1px;
+
+  --main-content-max-width: 100vw;
+ }
+}
+
+html[light-theme] {
+ --text-color: #2f3640;
+ --sideBar-header-bg-color: #f1f2f6;
+ --sideBar-Menu-bg-color: #ffffff;
+ --body-container: #f1f2f6;
+
+ --input-search-input-color: #2c3e50;
+ --input-search-input-border-color: #ecf0f1;
+
+ --sub-title-link-hover-bg-color: rgba(61, 61, 61, 0.22);
+ --menu-arrow-close-color: #595959;
+ --menu-arrow-open-color: rgb(34, 34, 34);
+ --menu-arrow-hover-color: rgb(135, 135, 135);
+
+ --hierarchy-line-color: #bebebe;
+ --sub-title-highlight-bg-color: #ff7f50;
+
+ --menuList-background-active-color: #ffffff;
+ --menuList-background-hover-color: #e3e3e37d;
+
+ --title-link-menu-bg-active-color: #a4a4a454;
+}

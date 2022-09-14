@@ -1,0 +1,250 @@
+:is(p, li, .block-title) code:not(p code[class]),
+:is(p, li, .block-title) terminal,
+:is(p, li, .block-title) file,
+:is(p, li, .block-title) folder,
+:is(p, li, .block-title) text,
+:is(p, li, .block-title) number {
+ font-size: 85%;
+ font-weight: 600;
+ font-family: consolas, monospace, 'Menlo', monospace;
+ vertical-align: middle;
+ margin: 0 0.2rem;
+ white-space: nowrap;
+ position: relative;
+ bottom: 2px;
+ border-radius: 0.2rem;
+ padding: 2px 6px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ cursor: default;
+ transition: all 0.3s;
+}
+
+/* #region code style */
+
+:is(p, li, .block-title) code:not(p code[class]) {
+ color: rgb(245, 246, 247);
+ background: #434343;
+ border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+:is(p, li, .block-title) terminal {
+ color: rgb(180, 180, 180);
+ background: #242323;
+ border: 0.1rem solid rgba(204, 204, 204, 0.1);
+}
+
+code[orange],
+terminal[orange] {
+ color: rgb(212, 156, 50);
+}
+
+code[yellow],
+terminal[yellow] {
+ color: #f1c40f;
+}
+
+code[red],
+terminal[red] {
+ color: #e74c3c;
+}
+
+/* #endregion */
+
+/* #region folder and file style */
+
+:is(p, li, .block-title) folder {
+ color: #404040;
+ background-color: #d5a00f;
+ border: 1px solid #8c6700;
+ border-bottom: 3px solid #9e7a17;
+ border-radius: 5px;
+}
+
+:is(p, li, .block-title) file {
+ color: #b5b5b5;
+ background-color: #292b28;
+ border: 1px solid rgb(76, 76, 76);
+ border-bottom: 3px solid rgb(91, 91, 91);
+ border-radius: 5px;
+}
+
+/* #endregion */
+
+/* #region text and number tag with color style */
+
+:is(p, li, .block-title) text {
+ color: #ffffff;
+ background: #c6ae1500;
+ border: 0.1rem solid rgb(182, 182, 182);
+}
+
+:is(p, li, .block-title) number {
+ border-radius: 0;
+ color: #ffffff;
+ background: #242323;
+ border: 0.1rem solid rgba(236, 236, 236, 0.38);
+}
+
+text[red],
+number[red] {
+ border: 0.1rem solid #e74d3cb6;
+ color: #e74c3c;
+}
+
+text[yellow],
+number[yellow] {
+ border: 0.1rem solid #c6a10b;
+ color: #f1c40f;
+}
+
+text[green],
+number[green] {
+ border: 0.1rem solid #14a952;
+ color: #2ecc71;
+}
+
+text[orange],
+number[orange] {
+ border: 0.1rem solid #cc6d1b;
+ color: #e67e22;
+}
+
+text[purple],
+number[purple] {
+ border: 0.1rem solid #8749a0;
+ color: #9b59b6;
+}
+
+text[blue],
+number[blue] {
+ border: 0.1rem solid #32adff;
+ color: #339fe7;
+}
+
+/* #endregion */
+
+/* #region colors with styles  */
+
+red {
+ color: #e74c3c;
+}
+
+blue {
+ color: #4dbbf7;
+}
+
+lightBlue {
+ color: #9cdcfe;
+}
+
+green {
+ color: #27ae60;
+}
+
+lightGreen {
+ color: #b5ce96;
+}
+
+pink {
+ color: #c32672;
+}
+
+orange {
+ color: rgb(212, 156, 50);
+}
+
+purple {
+ color: #d980fa;
+}
+
+sky {
+ color: #4ebef8;
+}
+
+black {
+ color: black;
+}
+
+white {
+ color: #d4d4d4;
+}
+
+gray {
+ color: #80807a;
+}
+
+brown {
+ color: rgb(171, 77, 0);
+}
+
+yellow {
+ color: #e0e05e;
+}
+
+[bold] {
+ font-weight: 600 !important;
+}
+
+[cap] {
+ text-transform: capitalize;
+}
+
+[consolas] {
+ font-family: Consolas, monospace, 'Segoe UI', 'Source Sans Pro', sans-serif;
+}
+
+[underline],
+underline {
+ text-decoration: underline;
+ text-decoration-color: inherit;
+}
+
+[bold],
+bold {
+ font-weight: 600 !important;
+}
+
+[consolas],
+consolas,
+.consolas {
+ font-family: Consolas, monospace, 'Segoe UI', 'Source Sans Pro', sans-serif;
+}
+
+/* #endregion */
+
+/* #region <text [...]></text> style color attribute */
+
+[red] {
+ color: #e74c3c !important;
+}
+
+[green] {
+ color: #2ecc71 !important;
+}
+
+[yellow] {
+ color: #f1c40f !important;
+}
+
+[orange] {
+ color: #e67e22 !important;
+}
+
+[purple] {
+ color: #d980fa !important;
+}
+
+[blue] {
+ color: #339fe7 !important;
+}
+
+/* #endregion */
+
+highlight {
+ border-bottom: 1px solid yellow;
+}
+
+.view-border {
+ border: 1px solid rgb(114, 114, 114);
+ padding: 22px;
+}

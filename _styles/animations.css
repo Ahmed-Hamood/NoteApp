@@ -1,0 +1,87 @@
+@keyframes opacityAnimation {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+
+@keyframes fadeSlideAnimation {
+ 0% {
+  opacity: 0;
+  right: 100px;
+ }
+ 100% {
+  opacity: 1;
+  right: 0;
+ }
+}
+
+@keyframes sideBarSlideAnimation {
+ 0% {
+  opacity: 0;
+  width: 0vw;
+ }
+ 100% {
+  opacity: 1;
+  width: 82vw;
+ }
+}
+@keyframes sideBarSlideAnimation2 {
+ 0% {
+  opacity: 1;
+  width: 82vw;
+ }
+ 100% {
+  opacity: 0;
+  width: 0vw;
+ }
+}
+
+@keyframes popupAnimation {
+ 0% {
+  /* opacity: 0; */
+  transform: scale(0);
+ }
+ 50% {
+  transform: scale(1.4);
+ }
+ 100% {
+  /* opacity: 1; */
+  transform: scale(1);
+ }
+}
+
+@keyframes BorderOpacityAnimation {
+ 0% {
+  border-color: #616161;
+ }
+ 100% {
+  border-color: #3d3d3d;
+ }
+}
+
+
+@keyframes zoom {
+ 0% {
+  transform: scale(0);
+ }
+ 50% {
+  transform: scale(1);
+ }
+ 100% {
+  transform: scale(0.7);
+ }
+}
+
+@keyframes loadingSpin {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+ 

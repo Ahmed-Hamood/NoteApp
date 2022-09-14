@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./_images/subject_icons/JS.png" />
+  <link rel="stylesheet" href="./_styles/home_page/home.css" />
+  <link rel="stylesheet" href="./_styles/prime_styles/prism.css" />
+  <link rel="stylesheet" href="./_styles/prime_styles/prism_html_css.css" />
+  <link rel="stylesheet" href="./_styles/prime_styles/prism_js_json_jsx.css" />
+  <link rel="stylesheet" href="./_styles/prime_styles/prism_python.css" />
+  <!--  -->
+  <script type="module" src="./_scripts/startup.js" defer></script>
+  <script type="module" src="./_scripts/prime_library/prism.js" defer></script>
+  <script type="module" src="./_scripts/prime_library/prism_normalize.js" defer></script>
+  <script type="module" src="./_scripts/prime_library/prism_html_css.js" defer></script>
+  <script type="module" src="./_scripts/prime_library/prism_js_json_jsx.js" defer></script>
+  <script type="module" src="./_scripts/prime_library/prism_python.js" defer></script>
+  <title>CodeNote Snippet</title>
+ </head>
+ <body>
+  <div class="body-container">
+   <aside class="sideBar">
+    <!-- ########################## Start SideBar header content ################ -->
+
+    <header class="sideBar-header">
+     <!-- <div class="search-content">
+      <i class="svg search-svg search-btn"></i>
+      <input class="search-input" type="text" placeholder="Search" />
+     </div> -->
+
+     <h1 class="side-title-header">CodeSnippet - NoteApp v1.5</h1>
+
+     <div class="menu-btn-content">
+      <i class="svg close-svg menu-btn"></i>
+     </div>
+    </header>
+
+    <!-- ########################## End SideBar header content ################ -->
+
+    <!-- ########################## Start SideBar menu content ################ -->
+
+    <section class="sideBar-subjects-menu">
+     <div class="content-wrapper">
+      <!-- Menu_List_Content -->
+     </div>
+    </section>
+
+    <section class="sideBar-footer">
+     <h1 class="footer-title">Developed by - Ahmed Hamood</h1>
+     <div class="home-btn-container">
+      <i class="svg home-svg home-btn"></i>
+     </div>
+    </section>
+
+    <!-- ########################## Start SideBar menu content ################ -->
+   </aside>
+
+   <!-- ########################## Main Content ################ -->
+
+   <main class="main-content-container">
+    <!-- nav header - topic title - url path -->
+    <div class="main-content-header">
+     <div class="nav-header-container">
+      <div class="nav-content-header">
+       <div class="nav-history-container">
+        <img src="./_images/icons/backArrow-icon.png" title="Previous File" class="historyBtn back" id="go-back" />
+        <p class="nav-title-header"></p>
+        <img src="./_images/icons/backArrow-icon.png" title="Previous File" class="historyBtn forward" id="go-forward" />
+       </div>
+      </div>
+
+      <div class="path-view-content-header">
+       <ul></ul>
+      </div>
+     </div>
+
+     <div class="menuIcon-mobile-container">
+      <i class="svg menu-svg menu-btn menu-small"></i>
+     </div>
+    </div>
+
+    <!-- render document content here -->
+    <div id="doc-content-render-container">
+     <div id="doc-content-render" class="middle-content-center">
+      <!-- Here content -->
+     </div>
+    </div>
+
+    <!-- Here side table content -->
+    <div class="side-table-topic-content"></div>
+   </main>
+   <!-- ########################## Main Content ################ -->
+
+   <div id="blank-sidebar-content"></div>
+  </div>
+  <audio id="Press" src="./sounds/Press.wav" preload="auto" controls="none" style="display: none"></audio>
+  <script></script>
+ </body>
+</html>
